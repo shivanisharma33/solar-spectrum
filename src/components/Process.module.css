@@ -1,0 +1,197 @@
+.processSection {
+    padding: 100px 20px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgDots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(#28a745 2px, transparent 0);
+    background-size: 20px 20px;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 80px;
+    z-index: 2;
+}
+
+.subtitle {
+   background: linear-gradient(
+  90deg,
+  #349920 40%,
+  #febd59 50%,
+  #349920 60%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.intro {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.grid {
+    max-width: 1280px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    z-index: 2;
+}
+
+.stepBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Base shapes for images */
+.imageWrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.stepImageWrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    overflow: hidden;
+    position: relative;
+}
+
+.stepImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.stepBlock:hover .stepImage {
+    transform: scale(1.1);
+}
+
+/* Step 1 & 3: Arched top, straight bottom */
+.archedTop .stepImageWrapper {
+    border-radius: 150px 150px 0 0;
+}
+
+/* Step 2 & 4: Straight top, arched bottom */
+.archedBottom .stepImageWrapper {
+    border-radius: 0 0 150px 150px;
+}
+
+/* Content Ordering */
+/* For 2 and 4, text is above image */
+.textAboveImage {
+    flex-direction: column-reverse;
+}
+
+.textAboveImage .imageWrapper {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Number badges */
+.numberBadge {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #28a745;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+    border: 4px solid #fff;
+    z-index: 5;
+}
+
+/* Positioning badges */
+.archedTop .numberBadge {
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.archedBottom .numberBadge {
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    padding: 10px;
+}
+
+.stepTitle {
+    font-size: 20px;
+
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.stepDesc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .textAboveImage {
+        flex-direction: column;
+    }
+
+    .textAboveImage .imageWrapper {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .archedBottom .stepImage {
+        border-radius: 50% 50% 0 0;
+    }
+
+    .archedBottom .numberBadge {
+        top: auto;
+        bottom: -22px;
+    }
+}
