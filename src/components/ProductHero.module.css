@@ -1,0 +1,173 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-color: #05070a;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.4;
+    /* Make it dark like the reference */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textContent {
+    flex: 1;
+    max-width: 800px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtitleGreen {
+    color: #65B741;
+}
+
+.subtitleDivider {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.subtitleOrange {
+    color: #ff9d2d;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.badgeWrapper {
+    display: inline-block;
+    background: #ffffff;
+    padding: 2px 12px;
+    border-radius: 4px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.badgeText {
+    color: #28a745;
+    /* Vivid Green like the image */
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.imageContent {
+    flex: 0.6;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.powerwallWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    /* We'll use absolute positioning for a 3D feel if needed, but for now just contain */
+}
+
+.powerwallImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* If the image has a background, we might want to mask it or just ensure it blends */
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 1100px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .badgeText {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        gap: 40px;
+    }
+
+    .textContent {
+        max-width: 100%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .badgeText {
+        font-size: 32px;
+    }
+
+    .badgeWrapper {
+        padding: 2px 12px;
+        margin: 5px 0;
+    }
+
+    .imageContent {
+        justify-content: center;
+        width: 100%;
+    }
+}

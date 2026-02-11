@@ -1,0 +1,153 @@
+.section {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-color: #1a3c40;
+    /* Fallback color */
+    overflow: hidden;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 62, 72, 0.92);
+    /* Dark Teal Overlay matching image */
+    z-index: 1;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.4;
+    /* Slight visibility of solar panels behind overlay */
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.imageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    /* Adjustments to make the image sit at the bottom properly */
+    height: 500px;
+    margin-bottom: -100px;
+    /* Pull image down to cut off at bottom like in design */
+}
+
+.workerImage {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.content {
+    flex: 1.2;
+    color: #ffffff;
+    padding-bottom: 40px;
+    /* Slight offset to balance layout */
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.phoneContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phoneIcon {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+}
+
+.phoneNumber {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        /* Text on top, image on bottom for mobile */
+        text-align: center;
+    }
+
+    .imageWrapper {
+        height: 350px;
+        margin-bottom: -60px;
+        width: 100%;
+    }
+
+    .content {
+        padding-bottom: 0;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .phoneContainer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 32px;
+    }
+
+    .phoneNumber {
+        font-size: 18px;
+    }
+
+    .imageWrapper {
+        height: 300px;
+    }
+}

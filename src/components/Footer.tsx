@@ -8,17 +8,6 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <footer className={styles.footerSection}>
-            {/* Top Overlapping Banner */}
-            <div className={styles.bannerContainer}>
-                <div className={styles.banner}>
-                    <h2 className={styles.bannerTitle}>Let us Maximize Your Solar Return</h2>
-                    <p className={styles.bannerDesc}>
-                        Click the button below for a custom tailored solar analysis, where our experts on solar incentives will design your system and show you projected savings and ROI – making sure to maximize your return at every step of the process!
-                    </p>
-                    <button className={styles.bannerBtn}>Schedule A Free Consultation Today</button>
-                </div>
-            </div>
-
             {/* Main Footer Content */}
             <div className={styles.footerMain}>
                 {/* Column 1: Info */}

@@ -1,0 +1,178 @@
+.section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Left Side */
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #28a745;
+    margin: 0;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.btn {
+    align-self: flex-start;
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 14px 36px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2);
+}
+
+/* Right Side Cards */
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardBase {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cardBase:hover {
+    transform: translateX(10px);
+}
+
+.visionCard {
+    background: linear-gradient(90deg, #28a745 0%, #ffb800 100%);
+    color: #ffffff;
+    box-shadow: 0 15px 35px rgba(40, 167, 69, 0.2);
+}
+
+.whiteCard {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.iconCircle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.whiteCircle {
+    background-color: #ffffff;
+}
+
+.greenCircle {
+    background-color: #28a745;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.iconGreen {
+    color: #28a745;
+}
+
+.iconWhite {
+    color: #ffffff;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 4px 0;
+}
+
+.textBlack {
+    color: #000;
+}
+
+.textWhite {
+    color: #fff;
+}
+
+.cardText {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.textGray {
+    color: #666;
+}
+
+.textLight {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .leftContent {
+        align-items: center;
+    }
+
+    .btn {
+        align-self: center;
+    }
+
+    .cardBase:hover {
+        transform: translateY(-5px);
+    }
+}
