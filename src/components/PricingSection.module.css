@@ -12,7 +12,9 @@
 .subtitle {
     font-size: 14px;
     font-weight: 600;
-    color: #28a745;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     margin-bottom: 12px;
     letter-spacing: 0.5px;
     text-transform: capitalize;

@@ -20,7 +20,7 @@ export default function ProblemFixSection() {
                 {/* Left Image (Worker) */}
                 <div className={styles.imageWrapper}>
                     <img
-                        src="/about.png"
+                        src="/bg23.png"
                         alt="Solar Technician"
                         className={styles.workerImage}
                     />

@@ -14,18 +14,27 @@
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: 0.3px;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .subtitleGreen {
-    color: #28a745;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .subtitleYellow {
-    color: #ffc107;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .subtitleGray {
-    color: #666;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .title {

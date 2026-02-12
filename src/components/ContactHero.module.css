@@ -71,7 +71,9 @@
 
 .subtitle {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     margin: 0 auto;
     line-height: 1.6;
     max-width: 600px;

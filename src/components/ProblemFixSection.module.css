@@ -59,7 +59,7 @@
 
 .workerImage {
     width: auto;
-    height: 100%;
+    height: 70%;
     object-fit: contain;
     max-width: 100%;
 }

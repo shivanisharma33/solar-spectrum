@@ -59,7 +59,9 @@
 }
 
 .subtitleGreen {
-    color: #65B741;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .subtitleDivider {
@@ -68,7 +70,9 @@
 }
 
 .subtitleOrange {
-    color: #ff9d2d;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .heading {

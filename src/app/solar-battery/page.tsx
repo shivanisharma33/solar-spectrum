@@ -19,7 +19,7 @@ export default function SolarBatteryPage() {
 
                 {/* Background Image */}
                 <Image
-                    src="/solar.png"
+                    src="/bg.png"
                     alt="Smart Energy Solutions"
                     fill
                     priority
