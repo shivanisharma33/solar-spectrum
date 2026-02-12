@@ -1,0 +1,216 @@
+.chargingSection {
+    padding: 100px 24px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(40, 167, 69, 0.1);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+    border-radius: 100px;
+    color: var(--primary-green);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: #0c0e0c;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+.intro {
+    font-size: 16px;
+    color: #555555;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+    background: #ffffff;
+    border-color: var(--primary-green);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.05);
+}
+
+.card.highlighted {
+    background: #ffffff;
+    border-color: var(--primary-green);
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.08);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.typeTag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+}
+
+.idTag {
+    width: 32px;
+    height: 32px;
+    background: #f1f3f5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.featurePreview {
+    width: 100%;
+    height: 160px;
+    background: #f8fbf9;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .featureImage {
+    transform: scale(1.1);
+}
+
+.voltage {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0c0e0c;
+}
+
+.speedBox {
+    background: #f8fbf9;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.speedLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 700;
+}
+
+.speedValue {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.separator {
+    height: 1px;
+    background: #eeeeee;
+    margin-bottom: 24px;
+}
+
+.footer {
+    margin-bottom: 24px;
+}
+
+.bestForLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 700;
+}
+
+.bestForValue {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.cardButton {
+    padding: 14px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    color: #1a1a1a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover .cardButton {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

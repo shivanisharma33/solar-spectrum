@@ -1,0 +1,269 @@
+.section {
+    padding: 100px 24px;
+    background-color: #f8fbf9;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(40, 167, 69, 0.1);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+    border-radius: 100px;
+    color: var(--primary-green);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: #0c0e0c;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+.intro {
+    font-size: 16px;
+    color: #555555;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+}
+
+.cardsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+    background: #fdfdfd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card.active {
+    background: #ffffff;
+    border-color: var(--primary-green);
+    box-shadow: 0 8px 16px rgba(40, 167, 69, 0.08);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cardIcon {
+    font-size: 24px;
+}
+
+.cardCategory {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 1px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #0c0e0c;
+}
+
+.cardPrice {
+    font-size: 14px;
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.selectionIndicator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 0;
+    background: var(--primary-green);
+    transition: height 0.3s ease;
+    border-radius: 0 4px 4px 0;
+}
+
+.card.active .selectionIndicator {
+    height: 40px;
+}
+
+.detailsPanel {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.panelOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(40, 167, 69, 0.03), transparent 60%);
+    pointer-events: none;
+}
+
+.panelContent {
+    position: relative;
+    z-index: 2;
+    padding: 60px;
+}
+
+.panelHeader {
+    margin-bottom: 40px;
+}
+
+.panelTitle {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #0c0e0c;
+}
+
+.panelDesc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.specsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.specBox {
+    background: #f8f9fa;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.specLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.specValue {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.benefitSection {
+    margin-bottom: 40px;
+}
+
+.benefitsTitle {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.benefitsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.checkmark {
+    color: var(--primary-green);
+    font-size: 18px;
+}
+
+.ctaBtn {
+    width: 100%;
+    padding: 18px;
+    background: var(--primary-green);
+    color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.ctaBtn:hover {
+    background: #1e7e34;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .panelContent {
+        padding: 40px 24px;
+    }
+
+    .specsGrid,
+    .benefitsList {
+        grid-template-columns: 1fr;
+    }
+}
