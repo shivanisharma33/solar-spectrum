@@ -65,7 +65,7 @@ const WhyChoosePowerwall = () => {
                     </div>
                     <div className={styles.cardImage}>
                         <Image
-                            src="/herro1.png"
+                            src="/solar.png"
                             alt="Green energy battery system"
                             fill
                             className={styles.image}
@@ -117,7 +117,7 @@ const WhyChoosePowerwall = () => {
                     </div>
                     <div className={styles.cardImage}>
                         <Image
-                            src="/services1.png"
+                            src="/product.png"
                             alt="Solar panel monitoring"
                             fill
                             className={styles.image}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './HeatingCoolingHero.module.css';
 
 const HeatingCoolingHero = () => {
@@ -18,8 +19,12 @@ const HeatingCoolingHero = () => {
                     </p>
 
                     <div className={styles.ctaButtons}>
-                        <button className={styles.primaryButton}>Initiate Free Audit</button>
-                        <button className={styles.secondaryButton}>View Tech Specs</button>
+                        <Link href="/contact">
+                            <button className={styles.primaryButton}>Initiate Free Audit</button>
+                        </Link>
+                        <Link href="/product">
+                            <button className={styles.secondaryButton}>View Tech Specs</button>
+                        </Link>
                     </div>
 
                     <div className={styles.stats}>

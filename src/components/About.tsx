@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './About.module.css';
 
 const About = () => {
@@ -74,7 +75,9 @@ const About = () => {
                         </div>
                     </div>
 
-                    <button className={styles.moreBtn}>More About</button>
+                    <Link href="/about">
+                        <button className={styles.moreBtn}>More About</button>
+                    </Link>
                 </div>
             </div>
 

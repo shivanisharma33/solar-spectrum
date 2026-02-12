@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './HeatPumpEVCTA.module.css';
 
 const HeatPumpEVCTA = () => {
@@ -35,7 +36,9 @@ const HeatPumpEVCTA = () => {
                     </div>
 
                     <div className={styles.actions}>
-                        <button className={styles.ctaButton}>Get Your FREE Quote Now</button>
+                        <Link href="/contact">
+                            <button className={styles.ctaButton}>Get Your FREE Quote Now</button>
+                        </Link>
                         <p className={styles.smallText}>No obligation • Takes only 2 minutes • Expert advice</p>
                     </div>
                 </div>

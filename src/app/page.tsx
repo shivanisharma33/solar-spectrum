@@ -21,9 +21,6 @@ export default function Home() {
           <CTASection />
            <Testimonials />
       <ContactSection />
-    
-    
-     
       <Footer />
     </main>
   );

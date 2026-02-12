@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './CTASection.module.css';
 
 const CTASection = () => {
@@ -21,7 +22,9 @@ const CTASection = () => {
                     <h2 className={styles.title}>
                         We are a Global Solar Panel Pump and Street light installer
                     </h2>
-                    <button className={styles.btn}>Get Free Consultation</button>
+                    <Link href="/contact">
+                        <button className={styles.btn}>Get Free Consultation</button>
+                    </Link>
                 </div>
             </div>
         </section>

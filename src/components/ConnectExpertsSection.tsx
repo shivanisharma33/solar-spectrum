@@ -30,19 +30,13 @@ const ConnectExpertsSection = () => {
 
                     {/* Left: Form */}
                     <div className={styles.form}>
-                        {/* Name Input with Cursor */}
+                        {/* Name Input */}
                         <div className={styles.inputGroup}>
                             <input
                                 type="text"
                                 placeholder="Name"
                                 className={`${styles.input} ${styles.inputName}`}
                             />
-                            {/* Cursor Mockup (Green Arrow) */}
-                            <div className={styles.cursorIcon}>
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="#28a745" style={{ transform: 'rotate(-20deg)' }}>
-                                    <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" stroke="white" strokeWidth="1.5" />
-                                </svg>
-                            </div>
                         </div>
 
                         <div>

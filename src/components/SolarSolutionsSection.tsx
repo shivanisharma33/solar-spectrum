@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SolarSolutionsSection.module.css';
 
@@ -59,8 +60,12 @@ const SolarSolutionsSection = () => {
                         </div>
 
                         <div className={styles.buttons}>
-                            <button className={styles.primaryButton}>Get Your Free Quote</button>
-                            <button className={styles.secondaryButton}>Explore</button>
+                            <Link href="/contact">
+                                <button className={styles.primaryButton}>Get Your Free Quote</button>
+                            </Link>
+                            <Link href="/solar-battery">
+                                <button className={styles.secondaryButton}>Explore</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -99,8 +104,12 @@ const SolarSolutionsSection = () => {
                         </div>
 
                         <div className={styles.buttons}>
-                            <button className={styles.primaryButton}>Get Your Free Quote</button>
-                            <button className={styles.secondaryButton}>Explore</button>
+                            <Link href="/contact">
+                                <button className={styles.primaryButton}>Get Your Free Quote</button>
+                            </Link>
+                            <Link href="/solar-battery">
+                                <button className={styles.secondaryButton}>Explore</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -139,8 +148,12 @@ const SolarSolutionsSection = () => {
                         </div>
 
                         <div className={styles.buttons}>
-                            <button className={styles.primaryButton}>Get Your Free Quote</button>
-                            <button className={styles.secondaryButton}>Explore</button>
+                            <Link href="/contact">
+                                <button className={styles.primaryButton}>Get Your Free Quote</button>
+                            </Link>
+                            <Link href="/solar-battery">
+                                <button className={styles.secondaryButton}>Explore</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

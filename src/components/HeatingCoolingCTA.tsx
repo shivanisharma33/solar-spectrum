@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './HeatingCoolingCTA.module.css';
 
 const HeatingCoolingCTA = () => {
@@ -35,7 +36,9 @@ const HeatingCoolingCTA = () => {
                     </div>
 
                     <div className={styles.actions}>
-                        <button className={styles.ctaButton}>Request Technical Audit</button>
+                        <Link href="/contact">
+                            <button className={styles.ctaButton}>Request Technical Audit</button>
+                        </Link>
                         <p className={styles.smallText}>No-obligation review • Engineer-led consultation</p>
                     </div>
                 </div>

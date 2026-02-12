@@ -32,7 +32,9 @@ const Navbar = () => {
         </ul>
 
         <div className={styles.navAction}>
-          <button className={styles.consultBtn}>Book Free Consultation</button>
+          <Link href="/contact">
+            <button className={styles.consultBtn}>Book Free Consultation</button>
+          </Link>
 
           {/* Hamburger Button */}
           <button
@@ -62,7 +64,9 @@ const Navbar = () => {
           <li><Link href="/product" onClick={toggleMenu}>Product</Link></li>
           <li><Link href="/contact" onClick={toggleMenu}>Contact Us</Link></li>
           <li className={styles.mobileAction}>
-            <button className={styles.consultBtn}>Book Free Consultation</button>
+            <Link href="/contact">
+              <button className={styles.consultBtn}>Book Free Consultation</button>
+            </Link>
           </li>
         </ul>
       </div>

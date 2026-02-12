@@ -8,6 +8,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <footer className={styles.footerSection}>
+            
             {/* Main Footer Content */}
             <div className={styles.footerMain}>
                 {/* Column 1: Info */}
@@ -91,6 +92,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            
         </footer>
     );
 };

@@ -9,7 +9,7 @@ const AboutHero = () => {
         <section className={styles.heroContainer}>
             {/* Background Image */}
             <Image
-                src="/solar.png"
+                src="/about2.png"
                 alt="Solar Panels Background"
                 fill
                 priority

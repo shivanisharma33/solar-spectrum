@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -28,17 +29,17 @@ const Hero = () => {
                     <div className={styles.badges}>
                         {/* 01 Badge: Approved Seller */}
                         <div className={styles.badgeItem}>
-                         <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/approved.png"}></img>
+                            <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/approved.png"}></img>
                         </div>
                         {/* 02 Badge: 100% Price */}
                         <div className={styles.badgeItem}>
-                           <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/best-price.png"}></img>
+                            <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/best-price.png"}></img>
                         </div>
                         {/* 03 Badge: No.2 Popular */}
                         <div className={styles.badgeItem}>
-                             <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/approved.png"}></img>
-                      
-                         </div>
+                            <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/approved.png"}></img>
+
+                        </div>
                     </div>
 
                     <h1 className={styles.mainHeading}>
@@ -51,7 +52,9 @@ const Hero = () => {
                     </div>
 
                     <div className={styles.btnWrapper}>
-                        <button className={styles.orderBtn}>Order Now</button>
+                        <Link href="/contact">
+                            <button className={styles.orderBtn}>Order Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>

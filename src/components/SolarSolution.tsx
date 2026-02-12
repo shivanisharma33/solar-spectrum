@@ -9,7 +9,7 @@ const SolarSolution = () => {
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/solar.png"
+                    src="/services2.png"
                     alt="Solar Panel Installation"
                     fill
                     className="object-cover"

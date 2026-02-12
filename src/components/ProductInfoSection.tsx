@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './ProductInfoSection.module.css';
 
@@ -39,10 +40,12 @@ const ProductInfoSection = () => {
                         </li>
                     </ul>
 
-                    <button className={styles.ctaButton}>
-                        <span className={styles.phoneIcon}>📞</span>
-                        Let's Talk
-                    </button>
+                    <Link href="/contact">
+                        <button className={styles.ctaButton}>
+                            <span className={styles.phoneIcon}>📞</span>
+                            Let's Talk
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Right Column - Image and Features */}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './PricingSection.module.css';
 
@@ -52,7 +53,9 @@ const PricingSection = () => {
                             </li>
                         </ul>
 
-                        <button className={styles.button}>Enquire Now</button>
+                        <Link href="/contact">
+                            <button className={styles.button}>Enquire Now</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -90,7 +93,9 @@ const PricingSection = () => {
                             </li>
                         </ul>
 
-                        <button className={`${styles.button} ${styles.buttonFeatured}`}>Enquire Now</button>
+                        <Link href="/contact">
+                            <button className={`${styles.button} ${styles.buttonFeatured}`}>Enquire Now</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -128,7 +133,9 @@ const PricingSection = () => {
                             </li>
                         </ul>
 
-                        <button className={styles.button}>Enquire Now</button>
+                        <Link href="/contact">
+                            <button className={styles.button}>Enquire Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>

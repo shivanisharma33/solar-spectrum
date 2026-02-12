@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './HeatPumpEVHero.module.css';
 
 const HeatPumpEVHero = () => {
@@ -18,8 +19,12 @@ const HeatPumpEVHero = () => {
                     </p>
 
                     <div className={styles.ctaButtons}>
-                        <button className={styles.primaryButton}>Get Hypervolt Quote</button>
-                        <button className={styles.secondaryButton}>View Home 3 Pro</button>
+                        <Link href="/contact">
+                            <button className={styles.primaryButton}>Get Hypervolt Quote</button>
+                        </Link>
+                        <Link href="/product">
+                            <button className={styles.secondaryButton}>View Home 3 Pro</button>
+                        </Link>
                     </div>
 
                     <div className={styles.stats}>

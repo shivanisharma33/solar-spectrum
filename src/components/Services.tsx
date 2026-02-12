@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './Services.module.css';
 
 const services = [
@@ -8,19 +9,22 @@ const services = [
         title: "Solar Panels",
         price: "Starting at $15,000",
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
-        image: "./services2.png"
+        image: "./services2.png",
+        learnMoreLink: "/product"
     },
     {
         title: "Solar Battery",
         price: "Starting at $15,000",
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
-        image: "services4.png"
+        image: "services4.png",
+        learnMoreLink: "/solar-battery"
     },
     {
         title: "Heating & Cooling",
         price: "Starting at $15,000",
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
-        image: "services3.png"
+        image: "services3.png",
+        learnMoreLink: "/heating-cooling"
     }
 ];
 
@@ -52,8 +56,12 @@ const Services = () => {
                         <p className={styles.description}>{service.description}</p>
 
                         <div className={styles.buttonGroup}>
-                            <button className={styles.getStartedBtn}>Get Started</button>
-                            <button className={styles.learnMoreBtn}>Learn More</button>
+                            <Link href="/contact">
+                                <button className={styles.getStartedBtn}>Get Started</button>
+                            </Link>
+                            <Link href={service.learnMoreLink}>
+                                <button className={styles.learnMoreBtn}>Learn More</button>
+                            </Link>
                         </div>
                     </div>
                 ))}
