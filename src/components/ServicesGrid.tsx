@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import ConsultationModal from './ConsultationModal';
 import styles from './ServicesGrid.module.css';
 
 interface Service {
@@ -63,33 +64,38 @@ const services: Service[] = [
 ];
 
 const ServicesGrid = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
-        <section className={styles.section}>
-            <div className={styles.container}>
-                <div className={styles.grid}>
-                    {services.map((service) => (
-                        <div key={service.id} className={styles.card}>
-                            <div className={styles.imageContainer}>
-                                <div className={styles.imageWrapper}>
-                                    <Image
-                                        src={service.imageSrc}
-                                        alt={service.alt}
-                                        width={400}
-                                        height={250}
-                                        className={styles.image}
-                                        style={{ objectFit: 'cover' }}
-                                    />
+        <>
+            <section className={styles.section}>
+                <div className={styles.container}>
+                    <div className={styles.grid}>
+                        {services.map((service) => (
+                            <div key={service.id} className={styles.card}>
+                                <div className={styles.imageContainer}>
+                                    <div className={styles.imageWrapper}>
+                                        <Image
+                                            src={service.imageSrc}
+                                            alt={service.alt}
+                                            width={400}
+                                            height={250}
+                                            className={styles.image}
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </div>
                                 </div>
+                                <h3 className={styles.title}>{service.title}</h3>
+                                <span className={styles.price}>{service.price}</span>
+                                <p className={styles.description}>{service.description}</p>
+                                <button className={styles.button} onClick={() => setIsModalOpen(true)}>Get Started</button>
                             </div>
-                            <h3 className={styles.title}>{service.title}</h3>
-                            <span className={styles.price}>{service.price}</span>
-                            <p className={styles.description}>{service.description}</p>
-                            <button className={styles.button}>Get Started</button>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <ConsultationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        </>
     );
 };
 

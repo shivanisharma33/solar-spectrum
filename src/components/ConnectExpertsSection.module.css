@@ -139,16 +139,7 @@
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
 }
 
-.redDot {
-    position: absolute;
-    right: 35px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: #ff3b30;
-    border-radius: 50%;
-}
+
 
 .selectWrapper {
     position: relative;

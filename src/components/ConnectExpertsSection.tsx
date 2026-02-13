@@ -53,7 +53,6 @@ const ConnectExpertsSection = () => {
                                 placeholder="Mobile Number"
                                 className={styles.input}
                             />
-                            <div className={styles.redDot} />
                         </div>
 
                         <div className={styles.inputGroup}>
@@ -64,7 +63,6 @@ const ConnectExpertsSection = () => {
                                     <option value="nsw">New South Wales</option>
                                     <option value="qld">Queensland</option>
                                 </select>
-                                <div className={styles.redDot} />
                                 <div className={styles.selectArrow}>
                                     <svg width="14" height="9" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1.5L6 6.5L11 1.5" stroke="#9CA3AF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

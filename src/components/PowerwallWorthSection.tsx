@@ -10,9 +10,6 @@ const PowerwallWorthSection = () => {
             <div className={styles.container}>
                 {/* Left - Overlapping Images */}
                 <div className={styles.imagesWrapper}>
-                    {/* Red Dot */}
-                    <div className={styles.redDot}></div>
-
                     {/* Image 1 - House with solar panels */}
                     <div className={styles.imageBox1}>
                         <Image

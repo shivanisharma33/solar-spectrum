@@ -33,7 +33,14 @@
 }
 
 .subHeader {
-    color: #65B741;
+    background: linear-gradient(
+  90deg,
+  #349920 40%,
+  #febd59 50%,
+  #349920 60%
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;

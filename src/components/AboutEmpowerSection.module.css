@@ -29,25 +29,7 @@
     position: relative;
 }
 
-.redDot {
-    color: #ff3b30;
-    position: absolute;
-    top: 5px;
-    right: 40px;
-    /* Adjust based on text wrap */
-    font-size: 50px;
-    line-height: 0;
-}
 
-/* Adjust red dot for mobile or specific text flow if needed */
-.redDotSmall {
-    display: inline-block;
-    color: #ff3b30;
-    font-size: 50px;
-    line-height: 0;
-    vertical-align: middle;
-    margin-left: 5px;
-}
 
 .description {
     font-size: 15px;

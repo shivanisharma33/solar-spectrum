@@ -12,7 +12,7 @@ const AboutEmpowerSection = () => {
                 <div className={styles.contentColumn}>
                     <h2 className={styles.heading}>
                         Empowering A Greener <br />
-                        Tomorrow <span className={styles.redDot}>.</span>
+                        Tomorrow
                     </h2>
 
                     <p className={styles.description}>

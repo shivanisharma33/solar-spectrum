@@ -17,24 +17,28 @@
     background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .subtitleGreen {
     background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .subtitleYellow {
     background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .subtitleGray {
     background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .title {
@@ -74,16 +78,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.redDot {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 10px;
-    height: 10px;
-    background-color: #dc3545;
-    border-radius: 50%;
-    z-index: 10;
-}
+
 
 .imageWrapper {
     position: relative;

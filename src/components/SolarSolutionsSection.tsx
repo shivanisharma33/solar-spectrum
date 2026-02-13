@@ -26,8 +26,6 @@ const SolarSolutionsSection = () => {
             <div className={styles.cardsContainer}>
                 {/* Card 1 - Sigenergy Battery Storage */}
                 <div className={styles.card}>
-                    <div className={styles.redDot}></div>
-
                     <div className={styles.imageWrapper}>
                         <Image
                             src="/product4.png"
