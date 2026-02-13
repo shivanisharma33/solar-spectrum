@@ -17,7 +17,7 @@
 .visualContainer {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -34,7 +34,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
 }
 
 .subtitle {
@@ -64,7 +64,7 @@
 .timeline {
     display: flex;
     gap: 20px;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 
 .yearButton {
@@ -89,7 +89,7 @@
 .milestone {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 25px;
     animation: fadeIn 0.5s ease-out;
 }
 
@@ -135,7 +135,6 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
 }
 
 .button:hover {

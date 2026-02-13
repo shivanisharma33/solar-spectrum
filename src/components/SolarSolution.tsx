@@ -19,10 +19,10 @@ const SolarSolution = () => {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center space-y-8">
+            <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center space-y-16">
 
                 {/* Play Button with Pulsing Effect */}
-                <div className="relative group cursor-pointer mb-4">
+                <div className="relative group cursor-pointer mb-20">
                     {/* Animated Ripple Effects */}
                     <div className="absolute inset-0 rounded-full bg-green-500/40 animate-pulse scale-[1.8] opacity-20" />
                     <div className="absolute inset-0 rounded-full bg-green-500/30 animate-pulse scale-[1.4] opacity-30 delay-700" />
@@ -38,12 +38,12 @@ const SolarSolution = () => {
                 </div>
 
                 {/* Headline */}
-                <h2 className="text-4xl md:text-6xl font-bold text-white max-w-4xl tracking-tight leading-tight">
+                <h2 className="text-4xl md:text-6xl font-bold text-white max-w-4xl tracking-tight leading-tight mt-10">
                     Searching for the Perfect <span className="text-green-500">Solar Solution?</span>
                 </h2>
 
                 {/* Sub-headline */}
-                <p className="text-gray-300 text-lg md:text-xl max-w-3xl font-medium leading-relaxed">
+                <p className="text-gray-300 text-lg md:text-xl max-w-3xl font-medium leading-relaxed mt-4">
                     We Bring Smart Solar Energy To Every Home And Business, Combining Innovation, Efficiency, And Lasting Performance For A Brighter, Greener Future.
                 </p>
 

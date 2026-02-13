@@ -42,10 +42,10 @@ const HistoryJourneySection = () => {
                 {/* Left Side - Visual Composition */}
                 <div className={styles.visualContainer}>
                     <Image
-                        src="/histroy2.png"
+                        src="/Solar Spectrum.png"
                         alt="Renewable Energy Evolution"
                         width={600}
-                        height={500}
+                        height={700}
                         className={styles.mainImage}
                         priority
                     />
