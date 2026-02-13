@@ -25,18 +25,18 @@ const ValuesShowcaseSection = () => {
 
                 {/* Right Side Cards */}
                 <div className={styles.cardsContainer}>
-                    {/* Our Vision Card - Gradient */}
-                    <div className={`${styles.cardBase} ${styles.visionCard}`}>
-                        <div className={`${styles.iconCircle} ${styles.whiteCircle}`}>
-                            <svg className={`${styles.icon} ${styles.iconGreen}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    {/* Our Vision Card - White */}
+                    <div className={`${styles.cardBase} ${styles.whiteCard}`}>
+                        <div className={`${styles.iconCircle} ${styles.greenCircle}`}>
+                            <svg className={`${styles.icon} ${styles.iconWhite}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <circle cx="12" cy="12" r="10" />
                                 <line x1="2" y1="12" x2="22" y2="12" />
                                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                             </svg>
                         </div>
                         <div className={styles.cardContent}>
-                            <h3 className={`${styles.cardTitle} ${styles.textWhite}`}>Our Vision</h3>
-                            <p className={`${styles.cardText} ${styles.textLight}`}>
+                            <h3 className={`${styles.cardTitle} ${styles.textBlack}`}>Our Vision</h3>
+                            <p className={`${styles.cardText} ${styles.textGray}`}>
                                 Smart Solar Systems Designed For Your Needs — Saving Energy With Simple Setup And Lasting Performance.
                             </p>
                         </div>
