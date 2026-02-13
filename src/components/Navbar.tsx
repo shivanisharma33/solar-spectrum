@@ -35,7 +35,7 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <ul className={styles.navLinks}>
-            <li><Link href="/about" className={styles.active}>About Us</Link></li>
+            <li><Link href="/about" >About Us</Link></li>
             <li><Link href="/solar-battery">Solar & Battery</Link></li>
             <li><Link href="/heating-cooling">Heating & Cooling</Link></li>
             <li><Link href="/ev-chargers">Heat Pump & EV Chargers</Link></li>

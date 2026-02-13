@@ -36,11 +36,11 @@
 }
 
 .navLinks a:hover {
-    color: #28a745;
+    color: #65B741;
 }
 
 .navLinks a.active {
-    color: #28a745;
+    color: #65B741;
 }
 
 .consultBtn {
@@ -176,7 +176,7 @@
 }
 
 .mobileNavLinks a:hover {
-    color: #28a745;
+    color: #65B741;
 }
 
 /* Backdrop Overlay */
