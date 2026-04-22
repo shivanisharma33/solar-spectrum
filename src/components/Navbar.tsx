@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className={styles.container}>
           <div className={styles.logo}>
             <Link href="/">
-              <Logo width={45} height={45} />
+              <Logo width={160} height={40} />
             </Link>
           </div>
 

@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={styles.footerMain}>
                 {/* Column 1: Info */}
                 <div className={styles.logoArea}>
-                    <Logo width={40} height={40} className={styles.footerLogo} />
+                    <Logo width={150} height={40} className={styles.footerLogo} />
                     <p className={styles.logoDesc}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                     </p>
