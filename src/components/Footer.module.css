@@ -100,6 +100,16 @@
     line-height: 1.5;
 }
 
+.contactLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+    color: #fff;
+}
+
 .contactIcon {
     color: #fff;
     font-size: 18px;

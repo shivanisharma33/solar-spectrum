@@ -57,21 +57,21 @@ export default function ContactForm() {
                 <div className={styles.detailIcon}>📞</div>
                 <div>
                   <h4 className={styles.detailLabel}>Phone</h4>
-                  <a href="tel:1300076527" className={styles.detailValue}>1300 076 527</a>
+                  <a href="tel:1300367909" className={styles.detailValue}>1300 367 909</a>
                 </div>
               </div>
               <div className={styles.detailItem}>
                 <div className={styles.detailIcon}>✉️</div>
                 <div>
                   <h4 className={styles.detailLabel}>Email</h4>
-                  <a href="mailto:info@solar.com.au" className={styles.detailValue}>info@solar.com.au</a>
+                  <a href="mailto:sales@solarspectrum.com.au" className={styles.detailValue}>sales@solarspectrum.com.au</a>
                 </div>
               </div>
               <div className={styles.detailItem}>
                 <div className={styles.detailIcon}>📍</div>
                 <div>
                   <h4 className={styles.detailLabel}>Office</h4>
-                  <p className={styles.detailValue}>123 Solar Street, Sydney NSW 2000</p>
+                  <p className={styles.detailValue}>404/87 Overton Rd, Williams Landing VIC 3027</p>
                 </div>
               </div>
             </div>
