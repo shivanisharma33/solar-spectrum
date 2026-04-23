@@ -27,11 +27,7 @@ const ProductHero = () => {
                     </p>
 
                     <h1 className={styles.heading}>
-                        SAVE UP TO
-                        <span className={styles.badgeWrapper}>
-                            <span className={styles.badgeText}>$4,800</span>
-                        </span>
-                        IN REBATES ON <br />
+                        MAXIMIZE REBATES ON <br />
                         YOUR TESLA POWERWALL 3
                     </h1>
                 </div>

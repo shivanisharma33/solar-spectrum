@@ -13,10 +13,10 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ width = 180, height = 50, className = '', showText = false }) => {
     return (
         <div className={`flex items-center ${className}`} style={{ display: 'flex', alignItems: 'center' }}>
-            <Image 
-                src="/logo.png" 
-                alt="Solar Spectrum Logo" 
-                width={width} 
+            <Image
+                src="/Asset 7.png"
+                alt="Solar Spectrum Logo"
+                width={width}
                 height={height}
                 style={{ objectFit: 'contain' }}
                 priority

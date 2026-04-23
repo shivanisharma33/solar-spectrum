@@ -10,8 +10,8 @@ const PricingSection = () => {
         <section className={styles.section}>
             {/* Header */}
             <div className={styles.header}>
-                <p className={styles.subtitle}>Pricing</p>
-                <h2 className={styles.title}>Our Best Pricing Plan</h2>
+                <p className={styles.subtitle}>Our Plans</p>
+                <h2 className={styles.title}>Our Best Solutions</h2>
                 <p className={styles.description}>
                     We Follow A Simple And Streamlined 4-Step Process To Deliver Efficient And Reliable Solar Solutions.
                 </p>
@@ -26,7 +26,7 @@ const PricingSection = () => {
                         <div className={styles.productName}>Tesla Powerwall 3</div>
                     </div>
 
-                    <div className={styles.savings}>Save Up To : $2,000</div>
+
 
                     <div className={styles.imageWrapper}>
                         <Image
@@ -66,7 +66,7 @@ const PricingSection = () => {
                         <div className={styles.productName}>Tesla Powerwall 3</div>
                     </div>
 
-                    <div className={styles.savings}>Save Up To : $2,000</div>
+
 
                     <div className={styles.imageWrapper}>
                         <Image
@@ -106,7 +106,7 @@ const PricingSection = () => {
                         <div className={styles.productName}>Tesla Powerwall 3</div>
                     </div>
 
-                    <div className={styles.savings}>Save Up To : $2,000</div>
+
 
                     <div className={styles.imageWrapper}>
                         <Image

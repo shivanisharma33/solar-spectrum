@@ -10,7 +10,7 @@ const solutions = [
         image: '/product3.png',
         title: 'Nexus Central Air',
         description: 'Elite whole-property thermal management',
-        price: 'From $4,500',
+
         longDesc: 'The Nexus series represents the pinnacle of central climate control. Engineered for expansive properties, it utilizes variable-speed compression to maintain a consistent environment with surgical precision.',
         specs: {
             'Rating': '24+ SEER2',
@@ -26,7 +26,7 @@ const solutions = [
         image: '/product4.png',
         title: 'Quantum Heat Pump',
         description: 'Bi-directional thermodynamic efficiency',
-        price: 'From $5,800',
+
         longDesc: 'Our Quantum heat pumps leverage advanced geothermal and air-source technology to provide both heating and cooling from a single, high-efficiency unit. Perfect for zero-emission goals.',
         specs: {
             'Efficiency': '400% COP',
@@ -42,7 +42,7 @@ const solutions = [
         image: '/product5.png',
         title: 'Apex Ductless Split',
         description: 'Bespoke zone climate control',
-        price: 'From $3,200',
+
         longDesc: 'The Apex series is designed for surgical comfort in specific areas. Without the need for ductwork, it delivers localized cooling and heating with the highest energy ratings in its class.',
         specs: {
             'Precision': '±0.5°C Control',
@@ -83,7 +83,7 @@ const HeatingCoolingSolutions = () => {
                                     <img src={sol.image} alt={sol.title} className={styles.solutionThumb} />
                                 </div>
                                 <h3 className={styles.cardTitle}>{sol.title}</h3>
-                                <div className={styles.cardPrice}>{sol.price}</div>
+
                                 <div className={styles.selectionIndicator}></div>
                             </button>
                         ))}

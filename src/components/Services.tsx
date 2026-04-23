@@ -7,21 +7,21 @@ import styles from './Services.module.css';
 const services = [
     {
         title: "Solar Panels",
-        price: "Starting at $15,000",
+
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
         image: "./services2.png",
         learnMoreLink: "/product"
     },
     {
         title: "Solar Battery",
-        price: "Starting at $15,000",
+
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
         image: "services4.png",
         learnMoreLink: "/solar-battery"
     },
     {
         title: "Heating & Cooling",
-        price: "Starting at $15,000",
+
         description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
         image: "services3.png",
         learnMoreLink: "/heating-cooling"
@@ -52,7 +52,7 @@ const Services = () => {
                         <h3 className={service.title === "Solar Panels" ? styles.serviceTitle : styles.serviceTitle}>
                             {service.title}
                         </h3>
-                        <p className={styles.price}>{service.price}</p>
+
                         <p className={styles.description}>{service.description}</p>
 
                         <div className={styles.buttonGroup}>

@@ -67,8 +67,14 @@
 
 .locationCard:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: var(--primary-green);
+    border-color: #28a745;
     transform: translateY(-5px);
+}
+
+.selectedCard {
+    background: rgba(40, 167, 69, 0.1) !important;
+    border-color: #28a745 !important;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
 }
 
 .cardHeader {
@@ -93,70 +99,6 @@
     font-weight: 700;
 }
 
-.cardBody {
-    flex: 1;
-}
-
-.savings {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 4px;
-}
-
-.amount {
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--primary-green);
-}
-
-.cardBtn {
-    width: 100%;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.locationCard:hover .cardBtn {
-    background: var(--primary-green);
-    border-color: var(--primary-green);
-}
-
-.footer {
-    margin-top: 60px;
-    text-align: center;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footerText {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-
-.exploreBtn {
-    padding: 14px 32px;
-    background: var(--primary-green);
-    color: white;
-    border-radius: 100px;
-    font-size: 16px;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.exploreBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2);
-}
 
 @media (max-width: 1024px) {
     .locationsGrid {

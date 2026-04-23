@@ -37,7 +37,7 @@ const SolarSolutionsSection = () => {
 
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Sigenergy Battery Storage</h3>
-                        <p className={styles.price}>Starting at $19,000</p>
+\n\n
                         <p className={styles.cardDescription}>
                             Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.
                         </p>
@@ -81,7 +81,7 @@ const SolarSolutionsSection = () => {
 
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Tesla Power Wall 3</h3>
-                        <p className={styles.price}>Starting at $12,000</p>
+\n\n
                         <p className={styles.cardDescription}>
                             Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.
                         </p>
@@ -125,7 +125,7 @@ const SolarSolutionsSection = () => {
 
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Goodwe Battery Storage</h3>
-                        <p className={styles.price}>Starting at $15,000</p>
+\n\n
                         <p className={styles.cardDescription}>
                             Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.
                         </p>

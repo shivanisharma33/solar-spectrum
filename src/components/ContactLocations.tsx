@@ -1,15 +1,17 @@
 'use client';
-
+import { useState } from 'react';
 import styles from './ContactLocations.module.css';
 
 export default function ContactLocations() {
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+
   const locations = [
-    { name: 'Sydney', savings: '$4,500', icon: '📍' },
-    { name: 'Melbourne', savings: '$4,200', icon: '📍' },
-    { name: 'Brisbane', savings: '$4,000', icon: '📍' },
-    { name: 'Perth', savings: '$3,800', icon: '📍' },
-    { name: 'Adelaide', savings: '$3,500', icon: '📍' },
-    { name: 'Canberra', savings: '$3,200', icon: '📍' },
+    { name: 'Sydney', icon: '📍' },
+    { name: 'Melbourne', icon: '📍' },
+    { name: 'Brisbane', icon: '📍' },
+    { name: 'Perth', icon: '📍' },
+    { name: 'Adelaide', icon: '📍' },
+    { name: 'Canberra', icon: '📍' },
   ];
 
   return (
@@ -21,30 +23,29 @@ export default function ContactLocations() {
             Serving You Across <span className={styles.highlight}>Australia</span>
           </h2>
           <p className={styles.subtitle}>
-            Join thousands of happy customers who are saving big on their energy bills with our tailored solar solutions.
+            {selectedLocation 
+              ? `Currently showing our availability for ${selectedLocation}. Our local experts are ready to assist you.`
+              : "We provide expert solar solutions across major Australian cities. Select a location to see our local availability."
+            }
           </p>
         </div>
 
         <div className={styles.locationsGrid}>
           {locations.map((location, index) => (
-            <div key={index} className={styles.locationCard}>
+            <div 
+              key={index} 
+              className={`${styles.locationCard} ${selectedLocation === location.name ? styles.selectedCard : ''}`} 
+              onClick={() => setSelectedLocation(location.name)}
+              style={{ cursor: 'pointer' }}
+            >
               <div className={styles.cardHeader}>
                 <div className={styles.iconWrapper}>{location.icon}</div>
                 <h3 className={styles.locationName}>{location.name}</h3>
               </div>
-              <div className={styles.cardBody}>
-                <p className={styles.savings}>Average Yearly Savings</p>
-                <p className={styles.amount}>{location.savings}</p>
-              </div>
-              <button className={styles.cardBtn}>Check Eligibility</button>
             </div>
           ))}
         </div>
 
-        <div className={styles.footer}>
-          <p className={styles.footerText}>Ready to start saving?</p>
-          <button className={styles.exploreBtn}>Explore All Solutions</button>
-        </div>
       </div>
     </section>
   );
