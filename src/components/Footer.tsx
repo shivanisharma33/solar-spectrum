@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className={styles.logoArea}>
                     <Logo width={150} height={40} className={styles.footerLogo} />
                     <p className={styles.logoDesc}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        Australia's leading provider of smart energy solutions. Powering your home with premium solar, battery, and climate control systems.
                     </p>
                     <div className={styles.socials}>
                         <Link href="#" className={styles.socialIcon}>
