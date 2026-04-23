@@ -5,12 +5,18 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://solarspectrum.com.au'),
   title: "Solar Spectrum | Renewable Energy Solutions",
   description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: "Solar Spectrum | Renewable Energy Solutions",
     description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
-    url: "https://solarspectrum.com",
+    url: "https://solarspectrum.com.au",
     siteName: "Solar Spectrum",
     images: [
       {
