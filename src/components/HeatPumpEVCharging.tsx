@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './HeatPumpEVCharging.module.css';
 
 const appFeatures = [
@@ -67,7 +68,9 @@ const HeatPumpEVCharging = () => {
                                 <span className={styles.bestForLabel}>Primary Benefit</span>
                                 <p className={styles.bestForValue}>{feature.bestFor}</p>
                             </div>
-                            <button className={styles.cardButton}>Explore App</button>
+                            <Link href="/contact">
+                                <button className={styles.cardButton}>Explore App</button>
+                            </Link>
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 const ValuesSection = () => {
     return (
@@ -25,9 +26,11 @@ const ValuesSection = () => {
                             Smart Technology, And Creating A Greener Future For All.
                         </p>
 
-                        <button className="!bg-[#28A745] hover:!bg-green-700 text-white font-bold !py-4.5 !px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_12px_30px_rgba(40,167,69,0.3)] text-[18px]">
-                            Discover More
-                        </button>
+                        <Link href="/about">
+                            <button className="!bg-[#28A745] hover:!bg-green-700 text-white font-bold !py-4.5 !px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_12px_30px_rgba(40,167,69,0.3)] text-[18px]">
+                                Discover More
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Right Side: Cards */}

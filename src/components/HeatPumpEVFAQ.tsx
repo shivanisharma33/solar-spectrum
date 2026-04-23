@@ -26,6 +26,8 @@ const faqs = [
     }
 ];
 
+import Link from 'next/link';
+
 const HeatPumpEVFAQ = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -71,7 +73,9 @@ const HeatPumpEVFAQ = () => {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Ready to Experience Hypervolt?</h3>
                         <p className={styles.ctaText}>Upgrade your EV charging with Hypervolt, now available through SolarRun.</p>
-                        <button className={styles.contactBtn}>Get Hypervolt Quote Today</button>
+                        <Link href="/contact">
+                            <button className={styles.contactBtn}>Get Hypervolt Quote Today</button>
+                        </Link>
                     </div>
                 </div>
             </div>

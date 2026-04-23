@@ -60,68 +60,29 @@
     line-height: 1.1;
 }
 
-/* Timeline */
-.timeline {
-    display: flex;
-    gap: 20px;
-    margin: 10px 0 20px 0;
-}
-
-.yearButton {
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    color: #666;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 8px 16px;
-    border-radius: 20px;
-}
-
-.activeYear {
-    background-color: #e8f5e9;
-    color: #000;
-    border: 1px solid #28a745;
-}
-
-/* Milestone Info */
-.milestone {
+/* Static Paragraph Content */
+.paragraphContainer {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     animation: fadeIn 0.5s ease-out;
 }
 
-.yearLabel {
-    font-size: 16px;
-    font-weight: 600;
+.mainDescription {
+    font-size: 18px;
     color: #333;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    line-height: 1.6;
+    font-weight: 500;
 }
 
-.dot {
-    width: 6px;
-    height: 6px;
-    background-color: #28a745;
-    border-radius: 50%;
-}
-
-.milestoneTitle {
-    font-size: 28px;
-    font-weight: 800;
-    color: #000;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.description {
-    font-size: 14px;
+.secondaryDescription {
+    font-size: 16px;
     color: #666;
     line-height: 1.6;
-    max-width: 500px;
+}
+
+.buttonWrapper {
+    margin-top: 20px;
 }
 
 .button {
@@ -165,11 +126,7 @@
         height: 400px;
     }
 
-    .timeline {
-        justify-content: center;
-    }
-
-    .milestone {
+    .paragraphContainer {
         align-items: center;
     }
 

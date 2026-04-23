@@ -54,6 +54,8 @@ const solutions = [
     }
 ];
 
+import Link from 'next/link';
+
 const HeatingCoolingSolutions = () => {
     const [selected, setSelected] = useState(1);
     const current = solutions.find(s => s.id === selected);
@@ -118,7 +120,9 @@ const HeatingCoolingSolutions = () => {
                                 </div>
                             </div>
 
-                            <button className={styles.ctaBtn}>Initiate Custom Setup →</button>
+                            <Link href="/contact">
+                                <button className={styles.ctaBtn}>Initiate Custom Setup →</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

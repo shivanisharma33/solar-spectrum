@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './SolarSolutionBanner.module.css';
 
 const SolarSolutionBanner = () => {
@@ -39,9 +40,11 @@ const SolarSolutionBanner = () => {
                 </p>
 
                 {/* CTA Button */}
-                <button className={styles.button}>
-                    Consult Now
-                </button>
+                <Link href="/contact">
+                    <button className={styles.button}>
+                        Consult Now
+                    </button>
+                </Link>
             </div>
         </section>
     );

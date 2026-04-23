@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import styles from './HeatPumpEVSolutions.module.css';
 
 const solutions = [
@@ -115,7 +116,9 @@ const HeatPumpEVSolutions = () => {
                                 </div>
                             </div>
 
-                            <button className={styles.ctaBtn}>Get Free Quote →</button>
+                            <Link href="/contact">
+                                <button className={styles.ctaBtn}>Get Free Quote →</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

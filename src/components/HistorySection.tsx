@@ -1,12 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 const HistorySection = () => {
-    const [activeYear, setActiveYear] = useState('2020');
-    const years = ['2020', '2021', '2022', '2023', '2024', '2025'];
-
     return (
         <section className="bg-white py-20 overflow-hidden">
             <div className="container mx-auto px-4 max-w-7xl">
@@ -29,44 +26,20 @@ const HistorySection = () => {
                         <div className="space-y-2">
                             <span className="text-[#28a745] font-bold text-xl uppercase">Our History</span>
                             <h2 className="text-4xl md:text-6xl font-black text-black leading-tight">
-                                Journey Was Started
+                                Innovation In Every Step
                             </h2>
                         </div>
 
-                        {/* Timeline Tags */}
-                        <div className="flex flex-wrap gap-4 md:gap-8">
-                            {years.map((year) => (
-                                <button
-                                    key={year}
-                                    onClick={() => setActiveYear(year)}
-                                    className={`px-6 py-2 rounded-full transition-all duration-300 font-bold text-lg ${activeYear === year
-                                            ? "bg-[#d4edda] text-black border border-[#28a745]"
-                                            : "text-gray-500 hover:text-black"
-                                        }`}
-                                >
-                                    {year}
-                                </button>
-                            ))}
-                        </div>
-
                         {/* Story Content */}
-                        <div className="space-y-6 animate-fadeIn">
-                            <div className="flex items-center gap-3">
-                                <span className="bg-red-500 w-1.5 h-1.5 rounded-full ring-4 ring-red-100"></span>
-                                <h4 className="text-xl font-bold text-gray-700">Year {activeYear}</h4>
-                            </div>
-                            <h3 className="text-3xl md:text-[42px] font-black text-black leading-[1.2]">
-                                Proud Recipient Of Our First Award<br />From Australia
-                            </h3>
+                        <div className="space-y-6">
+                            <p className="text-black text-xl leading-[1.6] font-semibold max-w-2xl">
+                                At Solar Spectrum, we specialize in smart, affordable, and reliable solar energy and storage solutions. Our history is defined by a continuous focus on innovation and customer satisfaction, helping homes and businesses across Australia switch to clean energy with ease.
+                            </p>
                             <p className="text-gray-500 text-[17px] leading-[1.8] max-w-2xl font-medium">
-                                Despite Applying For Three Times And Even Hiring A Lawyer To Assist With The Process.
-                                Morgan Was Unable To Get Authorization To Fly To The USA For The Premiere Of
-                                Her Film About A Factory-Farmed Pig.
+                                We pride ourselves on delivering high-efficiency solar panels and advanced battery technology tailored to your property's unique requirements. Our commitment to excellence ensures a smarter way to generate electricity and power a greener tomorrow for all our clients.
                             </p>
 
-                            <button className="!bg-[#28A745] hover:!bg-green-700 text-white font-bold !py-4.5 !px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_35px_rgba(40,167,69,0.25)] text-lg">
-                                See Our Achievement
-                            </button>
+
                         </div>
                     </div>
 

@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
 
@@ -152,15 +152,41 @@
 
 @media (max-width: 768px) {
     .banner {
-        min-height: 400px;
-        padding: 60px 20px;
+        min-height: 450px;
+        padding: 40px 16px;
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.5); /* Lighter overlay on mobile to see background */
     }
 
     .content {
-        gap: 30px;
+        gap: 15px; /* Tighten gap between elements */
+    }
+
+    .videoButtonWrapper {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        transform: scale(0.7);
+    }
+
+    .title {
+        font-size: 24px; /* Smaller font to prevent excessive wrapping */
+        line-height: 1.3;
+        padding: 0 10px;
     }
 
     .description {
         font-size: 14px;
+        line-height: 1.4;
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 280px; /* Limit width but still feel substantial */
+        padding: 12px 0;
+        font-size: 15px;
     }
 }

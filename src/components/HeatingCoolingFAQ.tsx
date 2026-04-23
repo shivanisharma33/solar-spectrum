@@ -26,6 +26,8 @@ const faqs = [
     }
 ];
 
+import Link from 'next/link';
+
 const HeatingCoolingFAQ = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -71,7 +73,9 @@ const HeatingCoolingFAQ = () => {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Complex Architecture?</h3>
                         <p className={styles.ctaText}>Consult with our thermodynamic engineers for a custom system design.</p>
-                        <button className={styles.contactBtn}>Initiate Technical Briefing</button>
+                        <Link href="/contact">
+                            <button className={styles.contactBtn}>Initiate Technical Briefing</button>
+                        </Link>
                     </div>
                 </div>
             </div>

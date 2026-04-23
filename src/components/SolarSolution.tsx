@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SolarSolution = () => {
     return (
@@ -48,9 +49,11 @@ const SolarSolution = () => {
                 </p>
 
                 {/* Consult Now Button */}
-                <button className="!bg-[#00B612] hover:!bg-[#009a0f] text-white font-bold !py-3.5 !px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(0,182,18,0.3)] text-lg tracking-tight inline-block whitespace-nowrap">
-                    Consult Now
-                </button>
+                <Link href="/contact">
+                    <button className="!bg-[#00B612] hover:!bg-[#009a0f] text-white font-bold !py-3.5 !px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(0,182,18,0.3)] text-lg tracking-tight inline-block whitespace-nowrap">
+                        Consult Now
+                    </button>
+                </Link>
             </div>
         </section>
     );

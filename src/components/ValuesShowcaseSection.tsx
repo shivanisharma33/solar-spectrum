@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import styles from './ValuesShowcaseSection.module.css';
 
 const ValuesShowcaseSection = () => {
@@ -20,7 +21,9 @@ const ValuesShowcaseSection = () => {
                         Innovation, And Excellence. We're Committed To Customer Satisfaction,
                         Smart Technology, And Creating A Greener Future For All.
                     </p>
-                    <button className={styles.btn}>Discover More</button>
+                    <Link href="/about">
+                        <button className={styles.btn}>Discover More</button>
+                    </Link>
                 </div>
 
                 {/* Right Side Cards */}

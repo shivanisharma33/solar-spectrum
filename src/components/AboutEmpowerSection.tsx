@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './AboutEmpowerSection.module.css';
 
 const AboutEmpowerSection = () => {
@@ -48,12 +49,14 @@ const AboutEmpowerSection = () => {
                         </div> */}
                     </div>
 
-                    <button className={styles.button}>
-                        Learn More
-                        <svg className={styles.buttonArrow} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path d="M17 8l4 4m0 0l-4 4m4-4H3" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
+                    <Link href="/services">
+                        <button className={styles.button}>
+                            Learn More
+                            <svg className={styles.buttonArrow} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M17 8l4 4m0 0l-4 4m4-4H3" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </button>
+                    </Link>
 
                 </div>
 
