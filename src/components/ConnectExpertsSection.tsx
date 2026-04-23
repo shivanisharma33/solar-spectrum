@@ -89,7 +89,8 @@ const ConnectExpertsSection = () => {
                             <div className={styles.contactText}>
                                 <h4 className={styles.contactTitle}>Address</h4>
                                 <p className={styles.contactDesc}>
-                                    Unit 16/260-276 Abbotts Road,<br />Dandenong South, VIC 3175
+                                    404/87 Overton Rd,<br></br>
+Williams Landing VIC 3027<br />
                                 </p>
                             </div>
                         </div>
@@ -104,7 +105,7 @@ const ConnectExpertsSection = () => {
                             <div className={styles.contactText}>
                                 <h4 className={styles.contactTitle}>Contact Us</h4>
                                 <p className={styles.contactDesc}>
-                                    VIC: 0414 107 970
+                                    VIC: 1300 367 909
                                 </p>
                             </div>
                         </div>
