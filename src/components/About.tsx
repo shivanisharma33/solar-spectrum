@@ -18,13 +18,7 @@ const About = () => {
                         />
                     </div>
 
-                    <div className={styles.playButtonContainer}>
-                        <div className={styles.pulsingCircle}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
-                        </div>
-                    </div>
+
                 </div>
 
                 {/* Right Section: Content */}
@@ -81,8 +75,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Decorative Dots */}
-            <div className={styles.bgDots}></div>
+
         </section>
     );
 };

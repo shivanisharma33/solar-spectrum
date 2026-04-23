@@ -18,10 +18,10 @@ const ConnectExpertsSection = () => {
             <div className={styles.container}>
                 {/* Header */}
                 <div className={styles.header}>
-                    <span className={styles.subHeader}>Get In Touch</span>
+                    <span className={styles.subHeader}>Professional Consultation</span>
                     <h2 className={styles.mainTitle}>
-                        Connect With Solar Experts<br />
-                        Near You
+                        Design Your Custom<br />
+                        Energy Ecosystem
                     </h2>
                 </div>
 
@@ -87,7 +87,7 @@ const ConnectExpertsSection = () => {
                                 </svg>
                             </div>
                             <div className={styles.contactText}>
-                                <h4 className={styles.contactTitle}>Address</h4>
+                                <h4 className={styles.contactTitle}>Our Headquarters</h4>
                                 <p className={styles.contactDesc}>
                                     404/87 Overton Rd,<br></br>
 Williams Landing VIC 3027<br />
@@ -103,7 +103,7 @@ Williams Landing VIC 3027<br />
                                 </svg>
                             </div>
                             <div className={styles.contactText}>
-                                <h4 className={styles.contactTitle}>Contact Us</h4>
+                                <h4 className={styles.contactTitle}>Direct Line</h4>
                                 <p className={styles.contactDesc}>
                                     VIC: 1300 367 909
                                 </p>
@@ -118,7 +118,7 @@ Williams Landing VIC 3027<br />
                                 </svg>
                             </div>
                             <div className={styles.contactText}>
-                                <h4 className={styles.contactTitle}>Email</h4>
+                                <h4 className={styles.contactTitle}>Digital Concierge</h4>
                                 <p className={styles.contactDesc}>
                                     sales@solarspectrum.com.au
                                 </p>
@@ -131,7 +131,7 @@ Williams Landing VIC 3027<br />
                 {/* Newsletter Section */}
                 <div className={styles.newsletter}>
                     <h3 className={styles.newsletterTitle}>
-                        Subscribe to our newsletter for the latest updates
+                        Join 5,000+ Victorians receiving our exclusive energy tips
                     </h3>
 
                     <div className={styles.newsletterForm}>
